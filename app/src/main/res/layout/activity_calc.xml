@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.geogehigbie.coolcalculator.CalcActivity">
 
-
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/corgi">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorCalcBackground"/>
 
         <LinearLayout
             android:id="@+id/row1"
@@ -40,15 +45,5 @@
 
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/corgi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/corgilittle"
-        android:layout_marginBottom="293dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
